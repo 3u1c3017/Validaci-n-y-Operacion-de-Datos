@@ -1,0 +1,131 @@
+Verde = "\033[92m"
+Cian = "\033[96m"
+Amarillo = "\033[93m"
+Reset = "\033[0m"
+
+# Primera parte del proyecto #
+
+print(f"{Verde}Bienvenido a la Calculadora de Longitud de Palabras{Reset}") 
+print()
+while True: 
+ palabra=input("Ingrese una palabra: ") 
+ x = len(palabra) 
+
+ if (x >= 4 and x <= 8): 
+    print(f"{Cian}Esta palabra tiene {x} letras, esta palabra es correcta, buen trabajo!{Reset}") 
+    break 
+
+ elif (x < 4): 
+    faltan = 4 - x 
+    if faltan == 1: 
+        print(f"{Cian}Esta palabra tiene {x} letras, hace falta {faltan} letra.{Reset}") 
+    else: 
+        print(f"{Cian}Esta palabra tiene {x} letras, hacen falta {faltan} letras.{Reset}") 
+
+ elif (x > 8): 
+    sobran = x - 8 
+    if sobran == 1: 
+        print(f"{Cian}Esta palabra tiene {x} letras, sobra {sobran} letra.{Reset}")
+    else: #Sino, cuando sobra más de una letra, se despliega un mensaje en plural.
+        print(f"{Cian}Esta palabra tiene {x} letras, sobran {sobran} letras.{Reset}")
+print()
+print(f"{Amarillo}¡Gracias por usar esta Calculadora de Longitud de Palabras!{Reset}") 
+print()
+
+# Segunda parte del proyecto #
+
+print(f"{Verde}Bienvenido a la Identificadora de Cuadrante{Reset}") 
+print("Instrucción: Según las coordenadas que proporcione, se\ndeterminará el cuadrante correspondiente en el Plano Cartesiano.")  
+print()
+
+while True: 
+ Valor_X= int(input("Ingrese el valor en X: "))
+
+ if Valor_X==0: 
+    print(f"El valor {Valor_X} se encuentra en el origen, por favor, ingresa un valor diferente.")
+    continue 
+ break 
+
+while True: 
+ Valor_Y = int(input("Ingrese un valor en Y: ")) 
+
+ if Valor_Y==0: 
+   print(f"El valor {Valor_Y} se encuentra en el origen, por favor, ingresa un valor diferente.")
+   continue 
+ break 
+
+print()
+print(f"Sus coordenadas son {Valor_X},{Valor_Y}") 
+print()
+
+#Identificar y mostrar en qué cuadrante se encuentra el punto según las coordenadas.
+if Valor_X >0 and Valor_Y >0: 
+  print(f"{Cian}Este punto en el plano está en el Primer Cuadrante{Reset}")
+  print()
+  print("       │   ") 
+  print("       │   ")     
+  print("       │   ")     
+  print("       │   ")    
+  print("       │        I")      
+  print("       │   ")      
+  print("       │   ")     
+  print("       │   ")
+  print("       │   ")
+  print("───────┼──────────────────")
+  print("       │   ")  
+  print("       │") 
+  print()     
+
+if Valor_X >0 and Valor_Y < 0: 
+  print(f"{Cian}Este punto en el plano está en el Cuarto Cuadrante{Reset}")
+  print()
+  print("       │   ")
+  print("       │   ")
+  print("───────┼──────────────────")            
+  print("       │   ") 
+  print("       │   ")     
+  print("       │   ")     
+  print("       │   ")    
+  print("       │        IV")      
+  print("       │   ")
+  print("       │   ")     
+  print("       │   ")
+  print("       │   ")   
+  print()
+
+  if Valor_X <0 and Valor_Y>0:
+   print(f"{Cian}Este punto en el plano está en el Segundo Cuadrante{Reset}")
+  print()
+  print("                  │   ") 
+  print("                  │   ")     
+  print("                  │   ")     
+  print("                  │   ")    
+  print("        II        │   ")      
+  print("                  │   ")
+  print("                  │   ")     
+  print("                  │   ")
+  print("                  │   ")
+  print("──────────────────┼───────")
+  print("                  │   ") 
+  print("                  │   ")
+  print()   
+
+  if Valor_X <0 and Valor_Y <0: 
+   print(f"{Cian}Este punto en el plano está en el Tercer Cuadrante{Reset}")
+  print()
+  print("                  │   ")
+  print("                  │   ")
+  print("──────────────────┼───────")            
+  print("                  │   ") 
+  print("                  │   ")     
+  print("                  │   ")     
+  print("                  │   ")    
+  print("       III        │   ")      
+  print("                  │   ")
+  print("                  │   ")     
+  print("                  │   ")
+  print("                  │   ")   
+  print()
+
+print(f"{Amarillo}¡Gracias por usar esta Identificadora de Cuadrante!{Reset}") 
+print()
