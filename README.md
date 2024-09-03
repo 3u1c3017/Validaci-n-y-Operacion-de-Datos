@@ -1,4 +1,4 @@
-Hola tedamos la coordial bienvenida a mi segundo repositorio en el que esta conformado por lo consiguiente que son  dos programas en Python que llevan acabo lo sieguiente:
+Hola te damos la coordial bienvenida a mi segundo repositorio en el que esta conformado por lo consiguiente que son  dos programas en Python que llevan acabo lo sieguiente:
 
 Calculadora de Longitud de Palabras: Consiste en que el programa mide la longitud de una palabra ingresada por el usuario , la palabra tiene entre 4 y 8 letras, se considera válida o de lo contrario, el programa indica cuántas letras faltan o sobran y solicita una nueva palabra hasta que se ingrese una válida.
 
